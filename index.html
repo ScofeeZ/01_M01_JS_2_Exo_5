@@ -6,33 +6,16 @@
   </head>
   <body>
     <div class="conteneur">
-      <img onmouseover="img1()" src="images/image1.jpg" id="image1" />
-      <img onmouseover="img2()" src="images/image2.jpg" id="image2" />
-      <img onmouseover="img3()" src="images/image3.jpg" id="image3" />
-      <img onmouseover="img4()" src="images/image4.jpg" id="image4" />
-      <img onmouseover="img5()" src="images/image5.jpg" id="image5" />
+      <img onmouseover="ronfex('image1')" onmouseout="ronfex('image1')" src="images/image1.jpg" id="image1" />
+      <img onmouseover="ronfex('image2')" onmouseout="ronfex('image2')" src="images/image2.jpg" id="image2" />
+      <img onmouseover="ronfex('image4')" onmouseout="ronfex('image4')" src="images/image4.jpg" id="image4" />
+      <img onmouseover="ronfex('image3')" onmouseout="ronfex('image3')" src="images/image3.jpg" id="image3" />
+      <img onmouseover="ronfex('image5')" onmouseout="ronfex('image5')" src="images/image5.jpg" id="image5" />
     </div>
   </body>
   <script>
-    function img1() {
-      var surprise = document.getElementById("image1");
-      surprise.src = "images/image1_2.jpg";
-    }
-    function img2() {
-      var surprise2 = document.getElementById("image2");
-      surprise2.src = "images/image2_2.jpg";
-    }
-    function img3() {
-      var surprise3 = document.getElementById("image3");
-      surprise3.src = "images/image3_2.jpg";
-    }
-    function img4() {
-      var surprise4 = document.getElementById("image4");
-      surprise4.src = "images/image4_2.jpg";
-    }
-    function img5() {
-      var surprise5 = document.getElementById("image5");
-      surprise5.src = "images/image5_2.jpg";
+    function ronfex(x) {
+      document.getElementById(x).src = "images/" + x + "_2.jpg";
     }
   </script>
 </html>
