@@ -6,15 +6,15 @@
   </head>
   <body>
     <div class="conteneur">
-      <img onmouseover="ronfex('image1')" onmouseout="ronfex('image1')" src="images/image1.jpg" id="image1" />
-      <img onmouseover="ronfex('image2')" onmouseout="ronfex('image2')" src="images/image2.jpg" id="image2" />
-      <img onmouseover="ronfex('image4')" onmouseout="ronfex('image4')" src="images/image4.jpg" id="image4" />
-      <img onmouseover="ronfex('image3')" onmouseout="ronfex('image3')" src="images/image3.jpg" id="image3" />
-      <img onmouseover="ronfex('image5')" onmouseout="ronfex('image5')" src="images/image5.jpg" id="image5" />
+      <img onmouseover="changer('image1')" src="images/image1.jpg" id="image1" />
+      <img onmouseover="changer('image2')" src="images/image2.jpg" id="image2" />
+      <img onmouseover="changer('image4')" src="images/image4.jpg" id="image4" />
+      <img onmouseover="changer('image3')" src="images/image3.jpg" id="image3" />
+      <img onmouseover="changer('image5')" src="images/image5.jpg" id="image5" />
     </div>
   </body>
   <script>
-    function ronfex(x) {
+    function changer(x) {
       document.getElementById(x).src = "images/" + x + "_2.jpg";
     }
   </script>
